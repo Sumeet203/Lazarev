@@ -51,33 +51,14 @@ nav{
 }
 #nav-bottom{
     position: absolute;
-    width : 82%;
+    width : 81.8%;
     height : 0;
     background-color: #111;
     top: 100%;
     z-index: 9;
     border-bottom :1px solid #fff;
 }
-/* nav:hover #nav-bottom{
-    height : 150%;
-    bottom : -150%;
-    background-color: #111;
-} */
-/* #nav-bottom{
-    height: 0%;
-    width : 82%;
 
-    position: absolute;
-    bottom : 0%;
-    border-bottom: 1px solid #dadada;
-    transition: all ease 0.65s;
-    display : flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding : 2vw 13vw;
-    padding-left : 16vw;
-    
-} */
 
 nav button{
     background-color: #0ba34e;
@@ -143,7 +124,7 @@ nav button svg {
     /* background-color: red; */
     margin-top : 10vh; 
     position : absolute;
-    bottom : 3%;
+    bottom :   5%;
     width : 48%;
     padding: 1.2vw;
     white-space: nowrap;
@@ -192,4 +173,59 @@ nav button svg {
     height : 100vh;
     width : 100%;
     background-color: #111;
+    position: relative;
+    padding : 0vw 9vw;
+    padding-bottom: 7vw;
+    display : flex;
+    align-items: center;
+    border-top: 1px solid #333 ;
+    justify-content: space-between;
 }
+#page2-left{
+    height : 100%;
+    width : 40%;
+    /* background-color: #333; */
+    display : flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding : 3vw 0;
+}
+
+#page2-left p{
+    font-size: 1.2vw;
+}
+
+#page2-left h5{
+    font-size : 1.3vw;
+    font-weight: 500;
+    width : 70%;
+}
+
+#page2-right{
+    height : 100%;
+    width : 50%;
+    /* background-color: #333; */
+}
+
+.right-elem{
+    position: relative;
+    /* background-color: red; */
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+    border-bottom : 1px solid #333;
+}
+.right-elem h2{
+    font-size : 1.2vw;
+    font-weight: 400;
+}
+.right-elem img{
+    height : 7vw;
+    width : 7vw;
+    border-radius: 50%;
+    object-fit : cover;
+    position: absolute;
+    opacity : 0;
+    scale : 0;
+}
+
