@@ -273,7 +273,7 @@ nav button svg {
     transform: translateY(15%);
 }
 .page3-center:hover h5{
-    opacity : 0.7;
+    opacity : 0.9;
     transform: translateY(0%);
 
 }
@@ -287,4 +287,40 @@ nav button svg {
     border-radius: 30px;
     opacity : 0;
     z-index : 9999;
+}
+
+#page-4{
+    height : 100vh;
+    width :100%;
+    background-color: #fff;
+    position: relative;
+    padding : 8vw 9vw;
+    display : flex;
+    justify-content: space-between;
+}
+#page4-left{
+    width : 40%;
+}
+#page4-left h2{
+    color : #111;
+    font-size : 3.5vw;
+    line-height: 1;
+    font-weight: 600;
+}
+#page4-right{
+    width : 50%;
+    display : flex;
+    flex-direction: column;
+    gap : 3vw;
+    padding : 0 2vw;
+}
+#page4-right h5{
+    font-size : 1.2vw;
+    color : #adadaa;
+    font-weight: 400;
+}
+#page4-right p{
+    font-size : 1.5vw;
+    color : #000000;
+    line-height: 1;
 }
