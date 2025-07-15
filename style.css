@@ -311,7 +311,7 @@ nav button svg {
     width : 50%;
     display : flex;
     flex-direction: column;
-    gap : 3vw;
+    gap : 2.5vw;
     padding : 0 2vw;
 }
 #page4-right h5{
@@ -323,4 +323,61 @@ nav button svg {
     font-size : 1.5vw;
     color : #000000;
     line-height: 1;
+}
+
+#page-5{
+    min-height: 100vh;
+    width : 100%;
+    background-color: #fff;
+     position: relative;
+    padding-bottom: 13vh;
+   
+}
+
+.section{
+   
+    width : 100%;
+    height : 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 10vh 9vw;
+}
+.sec-left{
+    height : 100%;
+    width : 25%;
+    /* background-color: #0ba34e; */
+    border-top : 2px solid #050505;
+}
+.sec-left h2{ 
+    font-size :2.1vw;
+    font-weight : 600;
+    color : #000;
+}
+.sec-left p{
+    color : #000;
+    margin-top : 10vh;
+    font-size : 1.2vw;
+    /* width : 80%; */
+}
+.sec-right{
+    height : 100%;
+    width : 65%;
+    background-color: tomato;
+    position: relative;
+}
+.sec-right img{
+    height : 100%;
+    width : 100%;
+    object-fit: cover;
+}
+.sec-right video{
+    width : 100%;
+    height : 100%;
+    position: absolute;
+    top :0;
+    left : 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity ease 0.1s;
 }
