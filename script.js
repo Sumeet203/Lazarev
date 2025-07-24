@@ -19,9 +19,9 @@ tl.from("nav",{
 })
 
 tl.from("#page1 h1,#page1 p,#page1 div",{
-  y:20,
+  y:40,
   opacity:0,
-  duration : 0.8,
+  duration : .8,
   stagger:0.2,
 })
 }
@@ -130,14 +130,14 @@ function page5Animation() {
 }
 
 function page7Animation() {
-  gsap.from("#btm7-part2 h4", {
+  gsap.from("#btm7-part2 h4,#btm7-part3 h4,#btm7-part4 h4", {
     x: 0,
-    duration: 0.2,
+    duration: 0.4,
     scrollTrigger: {
       trigger: "#btm7-part2",
       scroller: "body",
       // markers:true,
-      start: "top 80%",
+      start: "top 70%",
       end: "top 10%",
       scrub: true,
     },

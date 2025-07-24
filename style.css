@@ -9,6 +9,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  user-select: none;
 }
 nav {
   position: fixed;
@@ -34,8 +35,12 @@ nav {
 .nav-part2 h4 {
   font-size: 0.9vw;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 2.6vw;
+}
+.nav-part2 h4:hover{
+  color:#0ba34e;
+  transition: all ease-in .2s;
 }
 .nav-part2 h5 {
   margin-bottom: 1vw;
@@ -73,6 +78,10 @@ nav button svg {
   height: 1vw;
   margin-left: 1.4vw;
 }
+#page-1{
+  height : 100vh;
+  width : 100%;
+}
 #page1 {
   height: 100vh;
   width: 100%;
@@ -81,6 +90,12 @@ nav button svg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+#head-div{
+  overflow: hidden;
+  /* background-color: #0ba34e; */
+  /* height: fit-content; */
+  
 }
 #page1 h1 {
   font-size: 8vw;
@@ -98,6 +113,7 @@ nav button svg {
   text-align: center;
   font-weight: 400;
   margin-top: 3vh;
+  position: relative;
 }
 #page1-something {
   display: flex;
@@ -131,7 +147,7 @@ nav button svg {
   display: inline-block;
   animation-name: mobe;
   animation-duration: 9s;
-  animation-timing-function: linear;
+  animation-timing-function: linear;  
   animation-iteration-count: infinite;
 }
 #moving-div .move img {
@@ -191,13 +207,13 @@ nav button svg {
 }
 
 #page2-left p {
-  font-size: 1.2vw;
+  font-size: 1.6vw;
 }
 
 #page2-left h5 {
-  font-size: 1.3vw;
+  font-size: 1.8vw;
   font-weight: 500;
-  width: 70%;
+  width: 80%;
 }
 
 #page2-right {
@@ -214,7 +230,7 @@ nav button svg {
   border-bottom: 1px solid #333;
 }
 .right-elem h2 {
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   font-weight: 400;
 }
 .right-elem img {
@@ -286,7 +302,8 @@ nav button svg {
 }
 
 #page-4 {
-  height: 100vh;
+  /* background-color: red; */
+  height: 90vh;
   width: 100%;
   background-color: #fff;
   position: relative;
@@ -297,9 +314,9 @@ nav button svg {
 #page4-left {
   width: 40%;
 }
-#page4-left h2 {
+#page4-left h2{
   color: #111;
-  font-size: 3.5vw;
+  font-size: 3.8vw;
   line-height: 1;
   font-weight: 600;
 }
@@ -307,13 +324,14 @@ nav button svg {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 2.5vw;
+  gap: 2vw;
   padding: 0 2vw;
 }
 #page4-right h5 {
   font-size: 1.2vw;
   color: #adadaa;
   font-weight: 400;
+  text-transform: uppercase;
 }
 #page4-right p {
   font-size: 1.5vw;
@@ -326,7 +344,7 @@ nav button svg {
   width: 100%;
   background-color: #fff;
   position: relative;
-  padding-bottom: 13vh;
+  padding-bottom: 4vh;
 }
 
 .section {
@@ -339,7 +357,7 @@ nav button svg {
 }
 .sec-left {
   height: 100%;
-  width: 25%;
+  width: 30%;
   /* background-color: #0ba34e; */
   border-top: 2px solid #050505;
 }
@@ -351,7 +369,7 @@ nav button svg {
 .sec-left p {
   color: #000;
   margin-top: 10vh;
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   /* width : 80%; */
 }
 .sec-right {
@@ -612,6 +630,7 @@ summary::marker {
     display: flex;
     align-items: center;
     font-weight: 500;
+    white-space: nowrap;
 
 }
 
@@ -630,48 +649,160 @@ summary::marker {
     transform: translateX(0);
 }
 #btm7-part2 h4:nth-child(3){
-    transform: translateX(10%);
+    transform: translateX(15%);
 }
 #btm7-part2 h4:nth-child(4){
-    transform: translateX(20%);
+    transform: translateX(25%);
 }
 #btm7-part2 h4:nth-child(5){
-    transform: translateX(30%);
+    transform: translateX(35%);
 }
 #btm7-part2 h4:nth-child(6){
-    transform: translateX(40%);
+    transform: translateX(45%);
 }
 #btm7-part2 h4:nth-child(7){
-    transform: translateX(50%);
+    transform: translateX(55%);
 }
 
 #btm7-part3 h4:nth-child(2){
     transform: translateX(0);
 }
 #btm7-part3 h4:nth-child(3){
-    transform: translateX(10%);
+    transform: translateX(15%);
 }
 #btm7-part3 h4:nth-child(4){
-    transform: translateX(20%);
+    transform: translateX(25%);
 }
 #btm7-part3 h4:nth-child(5){
-    transform: translateX(30%);
+    transform: translateX(35%);
 }
 
 #btm7-part4 h4:nth-child(2){
     transform: translateX(0);
 }
 #btm7-part4 h4:nth-child(3){
-    transform: translateX(10%);
+    transform: translateX(15%);
 }
 #btm7-part4 h4:nth-child(4){
-    transform: translateX(20%);
+    transform: translateX(25%);
 }
 
 
 
-#page-8{
-  height : 100vh;
-  width : 100%;
-  background-color: #000;
+
+
+
+/* Footer */
+
+#footer {
+  background-color: #111;
+  color: #fff;
+  padding: 6vh 9vw;
+  /* background-color: #0ba34e; */
+}
+
+.footer-top {
+  display: flex;
+  gap : 25vw;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10vh;
+  
+}
+
+.footer-top h1 {
+  font-size: 4.2vw;
+  font-weight: 600;
+  line-height: 1;
+
+ 
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.footer-contact p {
+  font-size: 1vw;
+  color: #888;
+  text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+.footer-contact button {
+  padding: 0.4vw 0.8vw;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.footer-contact address {
+  font-size: 2.5vw;
+  font-style: normal;
+  line-height: 1.2;
+  font-weight: 550;
+}
+
+.footer-bottom{
+  display : flex;
+  gap : 4vw;
+  padding-top : 2vw;
+}
+.footer-bottom .footer-btm-part{
+  width : 14vw;
+ 
+
+
+}
+.footer-bottom .footer-btm-part h4{
+  color : #5b5959;
+  font-size : 1.2vw;
+  font-weight: 600;
+  margin-bottom: 1vw;
+  line-height: 1;
+}
+.footer-bottom .footer-btm-part ul {
+  list-style-type: none;
+  display : flex;
+  flex-direction: column;
+  gap : 1vw;
+}
+.footer-bottom .footer-btm-part ul li{
+  font-size : 1vw;
+  transition: all ease .5s;
+}
+.footer-bottom .footer-btm-part ul li:hover{
+  color :#2cca70;
+  cursor: pointer;
+ 
+}
+.footer-bottom .link-btm{
+  width : 23vw;
+  
+}
+.footer-bottom .footer-btm-part .social-links{
+  margin-top : 2vw;
+}
+.footer-bottom .footer-btm-part .social-links button{
+  padding: 0.4vw 0.8vw;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  background: transparent;
+  /* font-weight: 600; */
+  cursor: pointer;
+  width: fit-content;
+  margin-right:.5vw ;
+  margin-bottom: .8vw;
+  transition: all ease .5s;
+}
+.footer-bottom .footer-btm-part .social-links button:hover{
+  background-color: #fff;
+  color : #000;
+
 }
