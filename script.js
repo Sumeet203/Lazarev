@@ -167,11 +167,28 @@ function page7Animation() {
   })
 
 }
+function page6Icon(){
+  document.querySelectorAll("summary").forEach(summary => {
+  summary.addEventListener("click", function () {
+    const icon = this.querySelector(".icon");
+    if (icon) {
+      icon.classList.toggle("rotate");
+    }
+  });
+});
+}
 
+ page6Icon();
 loadingAnimation();
 navAnimation();
 page2Animation();
 page3VideoAnimation();
 page5Animation();
 page7Animation();
+
+
+
+
+
+
 
