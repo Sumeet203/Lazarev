@@ -417,7 +417,8 @@ nav button svg {
   margin-left : .5vw
 }
 #page-6 button:hover{
-  background-color :#14723d;
+  padding: 1.2vw 2.7vw;
+  cursor: pointer;
 }
 .page6-right {
   width: 70%;
@@ -761,9 +762,14 @@ summary::marker {
   border-radius: 25px;
   border: 1px solid #fff;
   background: transparent;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   width: fit-content;
+  transition: all ease .3s;
+}
+.footer-contact button:hover{
+  background-color: #fff;
+  color:#000;
 }
 
 .footer-contact address {
@@ -787,7 +793,7 @@ summary::marker {
 .footer-bottom .footer-btm-part h4{
   color : #5b5959;
   font-size : 1.2vw;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1vw;
   line-height: 1;
 }
@@ -829,4 +835,30 @@ summary::marker {
   background-color: #fff;
   color : #000;
 
+}
+.footer-end{
+  display : flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #333;
+  margin-top: 4vw;
+  padding-top : 1vw;
+
+}
+.footer-end h5{
+  font-size: 1.2vw;
+  font-weight: 500;
+  transition:all ease .3s;
+}
+.footer-end .footer-end-part2{
+  display: flex ;
+  gap : 12vw;
+}
+.footer-end .footer-end-part2 p,i{
+   transition:all ease .3s;
+}
+.footer-end h5:hover,.footer-end p:hover,.footer-end p:hover i{
+
+  color :#0ba34e;
+  cursor: pointer;
 }

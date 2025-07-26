@@ -142,29 +142,8 @@ function page7Animation() {
       scrub: true,
     },
   });
-  gsap.from("#btm7-part3 h4", {
-    x: 0,
-    duration: 0.2,
-    scrollTrigger: {
-      trigger: "#btm7-part3",
-      scroller: "body",
-      // markers:true,
-      start: "top 80%",
-      end: "top 10%",
-      scrub: true,
-    },
-  });
-  gsap.from("#btm7-part4 h4",{
-    x : 0,
-    duaration : 3,
-    scrollTrigger : {
-        trigger : "#btm7-part4",
-        scroller : "body",
-        start : "top 80%",
-        end : "top 10%",
-        scrub : true,
-    }
-  })
+
+
 
 }
 function page6Icon(){
